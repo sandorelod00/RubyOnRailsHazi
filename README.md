@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby On Rails Hazifeladat
 
-Things you may want to cover:
+Adatbázis: mysql
+Egyszerűen egy docker image-t használtam ami fut a háttérben a 3006-os porton
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
