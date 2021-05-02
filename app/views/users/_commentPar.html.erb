@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-header">
+    <h5><%=link_to "From: " + @allUserIdNameMap[comment.createdByUserId], profile_path(comment.createdByUserId)%></h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text"> <%= comment.content %></p>
+  </div>
+  <div class="card-footer">
+    <small>Created at: <%= comment.created_at %></small>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomeWork</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id=" page ">
+    <div id=" header "></div>
+    <div id="main">
+      <div id="menu">
+        <% if logged_in? %>
+          <%= render 'layouts/user' %>
+        <% else %>
+          <%= render 'layouts/guest' %>
+        <% end %>
+      </div>
+      <div class="container" id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="container text-muted" id="footer"> RoR, 2021</div>
+  </div>
+  </body>
+</html>

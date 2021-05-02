@@ -1,0 +1,30 @@
+<h1>Registration</h1>
+<p><%= flash[:user] %></p>
+
+<div class="card">
+  <div class="card-header">Register a new user</div>
+  <div class="card-body">
+  <%=form_for @user, url: "/users/create", method: :post do |form| %>
+      <div>
+        <%= form.label :name, :class => "form-label" %>
+        <%= form.text_field :name, size: 20, :class => "form-control"  %>
+      </div>
+    <div>
+      <%= form.label :email, :class => "form-label"%>
+      <%= form.text_field :email , size: 30, :class => "form-control"  %>
+    </div>
+    <div>
+      <%= form.label :password, :class => "form-label" %>
+      <%= form.password_field :password , size: 20, :class => "form-control"  %>
+    </div>
+    <div>
+      <%=form.label :phone, :class => "form-label" %>
+      <%= form.text_field :phone , size: 30, :class => "form-control"  %>
+    </div>
+    <%= form.submit "Register", :class => "btn btn-primary" %>
+  <% end %>
+  </div>
+</div>
+
+
+<%= link_to "Back", :back %>

@@ -1,0 +1,8 @@
+<% set_toUserId(params[:toUserId]) %>
+<%= form_for @comment, url: feedback_create_url, method: :post do |form| %>
+  <%= form.label :content, :class => "form-control" %>
+  <%= form.text_area :content, :class => "form-control" %>
+  <%= form.label :toUserId, "To User Id", :class => " visually-hidden", :styles => "visibility: hidden;" %>
+  <%= form.number_field :toUserId,  :class => "visually-hidden", :styles => "visibility: hidden;" %>
+  <%= form.submit "Send", :class => "btn btn-success col" %>
+<%end %>

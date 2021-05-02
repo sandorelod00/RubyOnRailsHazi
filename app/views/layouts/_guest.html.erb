@@ -1,0 +1,25 @@
+<div class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar" id="navbarNav">
+      <div class="nav-item">
+          <legend>Login</legend>
+          <%= form_tag '/sessions/create', method: :post do %>
+            <%= label_tag 'email',  'Email', :class => "form-label" %>
+            <%= text_field 'email', '', size: 14, :class => "form-control"   %>
+            <%= label_tag 'password',  'Password', :class => "form-label"  %>
+            <%= password_field_tag 'password', '', size: 14, :class => "form-control"  %>
+            <%= submit_tag "Login", :class => "btn btn-primary" %>
+          <% end %>
+      </div>
+      <div class="nav-link">
+        <%= link_to "Register", '/users/new', :class => "nav-link" %>
+      </div>
+      <div class="nav-link">
+        <%= link_to "Forgotten_password", '/users/forgotten', :class => "nav-link"  %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,38 @@
+
+<fieldset>
+  <% if isOwnerOfPage?(params[:id]) %>
+    <div class="card">
+      <div class="card-header">
+        <legend>Edit user profile</legend>
+      </div>
+      <div class="card-body">
+        <%=form_for @user, url: update_profile_path, method: :post do |form|%>
+          <div>
+            <%= form.label :name, :class => "form-label"  %>
+            <%= form.text_field :name, :class => "form-control"%>
+          </div>
+          <div>
+            <%= form.label :email, :class => "form-label" %>
+            <%= form.text_field :email , :class => "form-control"%>
+          </div>
+          <div>
+            <%= form.label :password, :class => "form-label"  %>
+            <%= form.password_field :password , :class => "form-control" %>
+          </div>
+          <div>
+            <%= form.label :phone, :class => "form-label"  %>
+            <%= form.number_field :phone , :class => "form-control" %>
+          </div>
+          </div>
+          <%= form.submit "Update", :class => "btn btn-success" %>
+        <% end %>
+        <%= link_to "Back", :back , :class => "btn btn-danger"%>
+
+        </div>
+    <%else %>
+      <h1>LOL XDD</h1>
+       <%= link_to "Back", :back , :class => "btn btn-danger"%>
+  <% end %>
+
+</fieldset>
+
