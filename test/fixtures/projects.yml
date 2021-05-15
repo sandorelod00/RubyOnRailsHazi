@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-ProjectOne:
+one:
+  id: 1
   name: Project1
   description: idk
   team_id: 1
@@ -8,6 +9,7 @@ ProjectOne:
   due_date: 2021-05-01 16:47:09
 
 two:
+  id: 2
   name: Project2
   description: AAAAAAAAAAAAAAAA
   team_id: 2

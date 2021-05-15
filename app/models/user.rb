@@ -30,6 +30,11 @@ class User < ApplicationRecord
   end
 
   def authenticated?(pass)
+    puts #################
+    puts self.encrypt_password
+    puts self.password
+    puts self.salt
+    puts User.encrypt(pass, self.salt)
     self.encrypted_password == User.encrypt(pass, self.salt)
   end
 end

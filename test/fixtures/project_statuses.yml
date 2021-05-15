@@ -1,11 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   projectStatus: Created
 
 two:
-  projectStatus: In Progress
+  id: 2
+  projectStatus: InProgress
+
 thr:
+  id: 3
   projectStatus: Closed
+
 For:
+  id: 4
   projectStatus: Blocked

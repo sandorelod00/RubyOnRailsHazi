@@ -2,7 +2,7 @@ require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
   test "the truth" do
-     assert true
+    equal? true
   end
 
   test "cannot save user without name" do
@@ -22,7 +22,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "encrypted" do
     u = User.find users(:admin).id
-    assert equal u.encrypted_password, Digest::SHA1.hexdigest('admin') , "A titkosítás nem megfelelő"
+    assert_equal u.encrypted_password, Digest::SHA1.hexdigest('adminadmin'), "Good"
   end
 
 end

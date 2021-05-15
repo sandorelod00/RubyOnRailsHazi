@@ -30,14 +30,11 @@ ActiveRecord::Schema.define(version: 2021_05_02_104751) do
   create_table "projects", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.integer "team_id"
     t.integer "project_status_id"
     t.datetime "due_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "team_id", null: false
-    t.bigint "status_id", null: false
-    t.index ["status_id"], name: "index_projects_on_status_id"
-    t.index ["team_id"], name: "index_projects_on_team_id"
   end
 
   create_table "skills", charset: "utf8mb4", force: :cascade do |t|
@@ -79,7 +76,6 @@ ActiveRecord::Schema.define(version: 2021_05_02_104751) do
     t.string "salt"
   end
 
-  add_foreign_key "projects", "teams"
   add_foreign_key "team_member_relations", "teams"
   add_foreign_key "team_member_relations", "users"
 end
