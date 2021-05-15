@@ -1,7 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  projectStatus: MyString
+  projectStatus: Created
 
 two:
-  projectStatus: MyString
+  projectStatus: In Progress
+thr:
+  projectStatus: Closed
+For:
+  projectStatus: Blocked

@@ -4,8 +4,26 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+tmr1:
+  user_id: 1
+  team_id: 1
+  team_role_id: 1
 # column: value
 #
-two: {}
+tmr2:
+  user_id: 2
+  team_id: 1
+  team_role_id: 3
 # column: value
+tmr3:
+  user_id: 3
+  team_id: 1
+  team_role_id: 3
+tmr4:
+  user_id: 1
+  team_id: 2
+  team_role_id: 3
+tmr5:
+  user_id: 3
+  team_id: 2
+  team_role_id: 1

@@ -2,12 +2,12 @@
 
 one:
   createdByUserId: 1
-  toUserId: 1
+  toUserId: 2
   rootCommentId: 1
-  content: MyText
+  content: ASDFASDFQERGBVERTW
 
 two:
-  createdByUserId: 1
+  createdByUserId: 2
   toUserId: 1
   rootCommentId: 1
-  content: MyText
+  content: NoU!

@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
+ProjectOne:
+  name: Project1
+  description: idk
   team_id: 1
   project_status_id: 1
   due_date: 2021-05-01 16:47:09
 
 two:
-  name: MyString
-  description: MyText
-  team_id: 1
-  project_status_id: 1
+  name: Project2
+  description: AAAAAAAAAAAAAAAA
+  team_id: 2
+  project_status_id: 3
   due_date: 2021-05-01 16:47:09
